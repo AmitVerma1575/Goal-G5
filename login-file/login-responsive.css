@@ -1,0 +1,19 @@
+@media (max-width: 480px) {
+  .form-box {
+    padding: 20px 15px;
+  }
+
+  .tab {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .form input, .form button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .form h2 {
+    font-size: 1.3rem;
+  }
+}

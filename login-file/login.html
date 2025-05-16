@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>𝙶𝙾𝙰𝙻-𝙶𝟻-𝙶𝙻𝙾𝙱𝙰𝙻/Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="./login.css">
+  <link rel="stylesheet" href="./login-responsive.css   ">
 </head>
 <body>
-    <!-- div start-->
-     <section class = "head">
-        <div class="heading">
-        <h1>𝙶𝙾𝙰𝙻-𝙶𝟻-𝙶𝙻𝙾𝙱𝙰𝙻 business solutions login page</h1>
-        </div>
-<div class="box">
-<span class = "login-card">
-<h2>Login Now</h2>
+  <div class="container">
+    <div class="form-box">
+      <div class="tab-switch">
+        <button id="loginTab" class="tab active" onclick="showForm('login')">Login</button>
+        <button id="registerTab" class="tab" onclick="showForm('register')">Create Account</button>
+      </div>
 
-</span>
-</div>        
+      <form id="loginForm" class="form active-form">
+        <h2>Welcome Back</h2>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
 
-     </section>
+      <form id="registerForm" class="form hidden">
+        <h2>Create Your Account</h2>
+        <input type="text" placeholder="Username" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function showForm(type) {
+      const loginForm = document.getElementById("loginForm");
+      const registerForm = document.getElementById("registerForm");
+      const loginTab = document.getElementById("loginTab");
+      const registerTab = document.getElementById("registerTab");
+
+      if (type === "login") {
+        loginForm.classList.remove("hidden");
+        loginTab.classList.add("active");
+
+        registerForm.classList.add("hidden");
+        registerTab.classList.remove("active");
+      } else {
+        loginForm.classList.add("hidden");
+        loginTab.classList.remove("active");
+
+        registerForm.classList.remove("hidden");
+        registerTab.classList.add("active");
+      }
+    }
+  </script>
 </body>
 </html>

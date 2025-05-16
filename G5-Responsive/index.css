@@ -5,10 +5,16 @@
 
 .navbar-text button{ background-color: #3d727a;
      border-radius: 120px; 
+    
      color:white; border: none; 
      width: 140px;
     height: 45px;
      font-weight:500;}
+     .navbar-text button a{
+        color: white !important;
+        
+        text-decoration: none;
+     }
 
      .heading h1{color: #3d727a;
         font-size: 4.75rem; padding: 25px;

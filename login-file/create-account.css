@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+background-image:url(../login-file/4957136.jpg); 
+width: 100%;
+height: 100%;
+position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container {
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 420px;
+  padding: 20px;
+  
+}
+
+.form-box {
+  background-color: #2e6b75;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+  color: white;
+  
+}
+
+.glass {
+  background: rgba(46, 107, 117, 0.85);
+  opacity: .7;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 1rem;
+}
+
+.input-group label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  color: white;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+  top: -10px;
+  font-size: 0.85rem;
+  color: #ffffffcc;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background-color: white;
+  color: #2e6b75;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f1f1f1;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.switch-text a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}

@@ -3,23 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
-body {
+html, body {
+  height: 100%;
   width: 100%;
-  height: 100vh;
+  overflow: hidden; /* Disable scrollbars */
+  background-color: white; /* White background */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white; /* Set background to white */
 }
 
 .container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   max-width: 420px;
+  width: 100%;
   padding: 20px;
 }
 
@@ -35,9 +33,9 @@ body {
 
 .glass {
   background: rgba(46, 107, 117, 0.85);
-  opacity: 1; /* Set to full opacity so it appears solid on white background */
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
 }
 
 .title {

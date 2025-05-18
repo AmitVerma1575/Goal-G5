@@ -8,42 +8,56 @@
 html, body {
   height: 100%;
   width: 100%;
-  overflow: hidden; /* Disable scrollbars */
-  background-color: white; /* White background */
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .container {
-  max-width: 420px;
-  width: 100%;
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 600px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* Left Panel with Image */
+.image-panel {
+  flex: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px;
 }
 
-.form-box {
-  background-color: #2e6b75;
-  padding: 30px 25px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  position: relative;
-  overflow: hidden;
-  color: white;
+.image-panel img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
 }
 
-.glass {
-  background: rgba(46, 107, 117, 0.85);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
+/* Right Panel with Form */
+.form-box {
+  flex: 1.4;
+  background-color: #2e6b75;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
 }
 
 .title {
   text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 25px;
+  font-size: 2rem;
+  margin-bottom: 30px;
   font-weight: bold;
-  color: white;
 }
 
 .form {
@@ -93,6 +107,7 @@ button {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -102,7 +117,6 @@ button:hover {
 .switch-text {
   text-align: center;
   margin-top: 20px;
-  color: white;
   font-size: 0.9rem;
 }
 

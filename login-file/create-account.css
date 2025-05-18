@@ -3,28 +3,24 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  
 }
 
 body {
-background-image:url(../login-file/4957136.jpg); 
-width: 100%;
-height: 100%;
-position: relative;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  background-color: white; /* Set background to white */
 }
 
 .container {
-    position: absolute;
+  position: absolute;
   width: 100%;
   height: 100%;
   max-width: 420px;
   padding: 20px;
-  
 }
 
 .form-box {
@@ -35,12 +31,11 @@ position: relative;
   position: relative;
   overflow: hidden;
   color: white;
-  
 }
 
 .glass {
   background: rgba(46, 107, 117, 0.85);
-  opacity: .7;
+  opacity: 1; /* Set to full opacity so it appears solid on white background */
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }

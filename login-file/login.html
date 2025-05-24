@@ -4,55 +4,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login Page</title>
-  <link rel="stylesheet" href="./login.css">
-  <link rel="stylesheet" href="./login-responsive.css   ">
+  <link rel="stylesheet" href="./login.css"/>
 </head>
 <body>
   <div class="container">
-    <div class="form-box">
-      <div class="tab-switch">
-        <button id="loginTab" class="tab active" onclick="showForm('login')">Login</button>
-        <button id="registerTab" class="tab" onclick="showForm('register')"><a href="./create-account.html">Create Account</a></button>
+    <div class="left-panel">
+      <h2>New here ?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, ex ratione. Aliquid!</p>
+      <button class="signup-btn">SIGN UP</button>
+    </div>
+    <div class="right-panel">
+      <h2>Sign in</h2>
+      <input type="text" placeholder="Username" class="input-field" />
+      <input type="password" placeholder="Password" class="input-field" />
+      <button class="login-btn"><a href="../Index.html">LOGIN</a></button>
+      <p class="or">Or Sign in with social platforms</p>
+      <div class="social-icons">
+        <div class="circle">
+          <img src="https://img.icons8.com/color/48/google-logo.png" alt="Google"/>
+        </div>
+        <div class="circle">
+          <img src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"/>
+        </div>
+        <div class="circle">
+          <img src="https://img.icons8.com/ios-filled/50/twitter.png" alt="Twitter"/>
+        </div>
+        <div class="circle">
+          <img src="https://img.icons8.com/ios-glyphs/50/github.png" alt="GitHub"/>
+        </div>
       </div>
-
-      <form id="loginForm" class="form active-form">
-        <h2>Welcome Back</h2>
-        <input type="text" placeholder="Username" required />
-        <input type="password" placeholder="Password" required />
-        <button type="submit">Login</button>
-      </form>
-
-      <form id="registerForm" class="form hidden">
-        <h2>Create Your Account</h2>
-        <input type="text" placeholder="Username" required />
-        <input type="email" placeholder="Email" required />
-        <input type="password" placeholder="Password" required />
-        <button type="submit">Register</button>
-      </form>
+      <button class="register-btn"><a href="./create-account.html">Register</a></button>
     </div>
   </div>
-
-  <script>
-    function showForm(type) {
-      const loginForm = document.getElementById("loginForm");
-      const registerForm = document.getElementById("registerForm");
-      const loginTab = document.getElementById("loginTab");
-      const registerTab = document.getElementById("registerTab");
-
-      if (type === "login") {
-        loginForm.classList.remove("hidden");
-        loginTab.classList.add("active");
-
-        registerForm.classList.add("hidden");
-        registerTab.classList.remove("active");
-      } else {
-        loginForm.classList.add("hidden");
-        loginTab.classList.remove("active");
-
-        registerForm.classList.remove("hidden");
-        registerTab.classList.add("active");
-      }
-    }
-  </script>
 </body>
 </html>
